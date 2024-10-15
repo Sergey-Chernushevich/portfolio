@@ -1,0 +1,44 @@
+@media (max-width: 768px) {
+  .firstSection {
+    flex-direction: column;
+  }
+
+  .firstSection .content {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .firstSection .photo {
+    display: none;
+  }
+
+  .button {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .projectItem__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 20px 0;
+    flex-direction: column;
+  }
+
+  .projectItem__imageWrapper {
+    height: 100%;
+    width: 200px;
+    margin-bottom: 20px;
+
+    margin-right: 0px;
+  }
+
+  .contacts .info .item {
+    margin-bottom: 25px;
+  }
+  .contacts .info .item:not(:last-child) {
+    margin-right: 0px;
+  }
+}

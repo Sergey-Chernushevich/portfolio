@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Gill";
+  src: url("./font/Gill\ Sans\ Bold.otf");
+}
+
+:root {
+  --primary: #ff6464;
+  --secondry: #00a8cc;
+  --dark: #21243d;
+  --light: #8695a4;
+  --blue: #edf7fa;
+}
+
+* {
+  font-family: "Gill";
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark);
+}
+
+.article {
+  margin-bottom: 7px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 2px;
+  background: var(--primary);
+  padding: 20px;
+  display: flex;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.section {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-bottom: 1px solid var(--primary);
+}
+
+.block {
+  margin-left: 20px;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.firstSection .content {
+  width: 60%;
+  margin-right: 15px;
+}
+
+.firstSection .photo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+
+.firstSection .photo .photo__img {
+  position: absolute;
+  left: -350px;
+  top: -485px;
+  transform: scale(0.3);
+  z-index: 10;
+}
+
+.firstSection .content .summary {
+  margin: 38px 0 38px 17px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 44px;
+}
+
+.jobTitle {
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--primary);
+}
+
+.section.contacts {
+  /* background-color: var(--blue); */
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.contacts .info {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contacts .info .item {
+  margin-bottom: 25px;
+}
+.contacts .info .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts .info .item .itemLink {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.contactsImg {
+  height: 30px;
+  margin-left: 10px;
+}
+
+.contactsImg img {
+  height: 100%;
+}
+
+.section.skills {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.skillList__item {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: 3px solid var(--primary);
+}
+
+.section.projects {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.projectItem {
+  width: 100%;
+  border-bottom: 1px solid var(--dark);
+  list-style-type: none;
+  display: flex;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.projectItem__link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 20px 20px 0;
+}
+
+.projectItem__title {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.projectItem__imageWrapper {
+  height: 100%;
+  width: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.projectItem__img {
+  width: 100%;
+  object-fit: contain;
+}
